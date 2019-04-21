@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Account</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+</head>
+<body>
+<section class="full-page container-fluid p-xs-0">
+    <div class="row">
+        <div class="col-3 col-md-2 p-xs-0 transparent-bg sidebar position-fixed">
+            <div class="top-navbar pt-2 pl-2 pb-3">
+                <a class="navbar-brand  text-light" href="#">
+                    <img src="logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                    <span class="xs-hide">Trool</span>
+                </a>
+            </div>
+            <div class="sidebar-collapsible">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link normal-link text-light" href="my-account.html">
+                            <i data-feather="settings"></i> <span class="xs-hide"> Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link normal-link text-light" href="my-orders.html">
+                            <i data-feather="file"></i><span class="xs-hide"> My Orders</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link normal-link nav-light active" href="track.html">
+                            <i data-feather="truck"></i> <span class="xs-hide"> Track Order</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link normal-link text-light" href="#">
+                            <i data-feather="bell"></i> <span class="xs-hide"> All Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link normal-link text-light" href="#">
+                            <i data-feather="power"></i> <span class="xs-hide">LogOut</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-9 ml-auto col-md-10 p-0">
+            <div class="user-info transparent-bg p-4">
+                <img class="rounded-circle user-item" src="https://lh4.googleusercontent.com/-WeeWIKH6_aQ/AAAAAAAAAAI/AAAAAAAAHVg/pqTb3e_qO3E/s96-c/photo.jpg" alt="">
+                <span class="user-item"><span class="xs-hide">Welcome</span> Pralay</span>
+            </div>
+
+            <div class="row m-0">
+                <div class="col-12 overflow-auto col-md-10 ml-auto mr-auto pt-2">
+                    <!--User Content Here-->
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Track Order</h4>
+                            <hr>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control">
+                                </div>
+
+
+                                <button class="btn btn-warning">Track</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--User Content End-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+</html>
+

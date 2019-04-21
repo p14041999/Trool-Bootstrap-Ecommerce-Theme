@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Trool | Retail Store</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+<!-- Starting header Section -->
+<section class="container-fluid mb-3">
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col col-sm-6 align-self-start">
+                <a class="normal-link" href="./index.html"><h2 class="brand-name">Trool</h2></a>
+            </div>
+            <div class="col col-sm-6 align-self-end text-right">
+                <a class="mr-3 normal-link" href="#">
+                    <i data-feather="user"></i>  My Account
+                </a>
+                <a class="normal-link" href="#">
+                    <i data-feather="shopping-cart"></i>  Cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Header Section -->
+
+<!--Start of navigation Section -->
+<section class="container-fluid bg-dark">
+    <nav class="container navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active mr-3">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#">New Arrival</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#">Men</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#">Women</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <div class="input-group">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <!--<span class="" id="basic-addon1">@</span>-->
+                        <button class="input-group-text">
+                            <i data-feather="search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+</section>
+<!--End of Nav Section-->
+
+<!-- Start Page Info -->
+<section class="container-fluid bg-grey pt-4 pb-4">
+    <div class="container">
+        <h4>Shopping Cart</h4>
+        <p>Home >> Cart</p>
+    </div>
+</section>
+<!-- End Page Info -->
+
+
+<!--Start Body Content-->
+<section class="container mt-5 mb-5">
+   <div class="card">
+       <div class="card-header">
+            <h4>Cart Items</h4>
+       </div>
+       <div class="card-body">
+            <div class="cart-item pt-2 row">
+                <div class="col-2">
+                    <img src="./images/product-5.jpg" alt="" class="col-10 cart-item-img img img-thumbnail">
+                </div>
+                <div class="col-4">
+                    <p>Product Name</p>
+                    <p>Mens Printed Graphic T shirt</p>
+                </div>
+                <div class="col-2">
+                    <label for="quantity-1"> Quantity </label>
+                    <input id="quantity-1" type="text" name="quantity" class="form-control" value="1">
+                </div>
+                <div class="col-2 text-center">
+                    <p>Price</p>
+                    <p class="price">&#8377;299</p>
+                </div>
+                <div class="col-2 text-center">
+                    <p> Action </p>
+                    <a href="#"> Remove </a>
+                </div>
+            </div>
+           <div class="cart-item pt-2 row">
+               <div class="col-2">
+                   <img src="./images/product-3.jpg" alt="" class="col-10 cart-item-img img img-thumbnail">
+               </div>
+               <div class="col-4">
+                   <p>Product Name</p>
+                   <p>Mens Printed Graphic T shirt</p>
+               </div>
+               <div class="col-2">
+                   <label for="quantity-2"> Quantity </label>
+                   <input id="quantity-2" type="text" name="quantity" class="form-control" value="1">
+               </div>
+               <div class="col-2 text-center">
+                   <p>Price</p>
+                   <p class="price">&#8377;299</p>
+               </div>
+               <div class="col-2 text-center">
+                   <p> Action </p>
+                   <a href="#"> Remove </a>
+               </div>
+           </div>
+           <div class="cart-item pt-2 row">
+               <div class="col-2">
+                   <img src="./images/product-2.jpg" alt="" class="col-10 cart-item-img img img-thumbnail">
+               </div>
+               <div class="col-4">
+                   <p>Product Name</p>
+                   <p>Mens Printed Graphic T shirt</p>
+               </div>
+               <div class="col-2">
+                   <label for="quantity-3"> Quantity </label>
+                   <input id="quantity-3" type="text" name="quantity" class="form-control" value="1">
+               </div>
+               <div class="col-2 text-center">
+                   <p>Price</p>
+                   <p class="price">&#8377;299</p>
+               </div>
+               <div class="col-2 text-center">
+                   <p> Action </p>
+                   <a href="#"> Remove </a>
+               </div>
+           </div>
+       </div>
+       <div class="card-footer">
+           <h5 class="float-right m-0"> Total: <span class="price">&#8377;897</span></h5>
+       </div>
+   </div>
+    <div class="button-container pt-2 mb-5 pb-5">
+        <button class="float-right btn btn-lg btn-primary">Proceed to Checkout</button>
+    </div>
+</section>
+<!--  End Body Content-->
+
+<!-- Start of Standard footer  -->
+<footer class="container-fluid bg-dark">
+    <div class="container text-light">
+        <div class="row pt-5 pb-5">
+            <div class="col-4">
+                <h3>About</h3>
+                <ul class="list">
+                    <li class="list-item">About</li>
+                    <li class="list-item">Products</li>
+                    <li class="list-item">Contact Us</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h3>Order</h3>
+                <ul class="list">
+                    <li class="list-item">Track Order</li>
+                    <li class="list-item">Send Feedback</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h3>About</h3>
+                <ul class="list">
+                    <li class="list-item">About</li>
+                    <li class="list-item">Products</li>
+                    <li class="list-item">Contact Us</li>
+                </ul>
+            </div>
+        </div>
+        <hr/>
+        <div class="container text-center">
+            <h2 class="pt-3 m-0">Trool</h2>
+            <p class="pt-2 pb-5 m-0">&copy; 2019 reserved by Trool. Designed with <i data-feather="heart"></i> by Code Partner.</p>
+        </div>
+
+    </div>
+</footer>
+<!-- End of Standard footer  -->
+
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+</html>
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="google-signin-client_id" content="358725097207-ash2ajsch62jvnv9dkpiogo27c3jkd51.apps.googleusercontent.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Trool | Retail Store</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+<section class="full-page gradient m-0 pt-md-5">
+    <div class="card col-12 col-md-4 ml-auto mr-auto transparent-bg">
+        <div class="card-hearer text-center p-2">
+            <a href="index.html" class="normal-link text-light">
+                <img src="favicon.png" alt="" height="52px">
+                <!--<br>-->
+                <!--<h3 class="text-light pt-2">Trool</h3>-->
+            </a>
+            <!--<hr>-->
+        </div>
+        <div class="card-body p-3 pt-4 pb-5">
+            <form action="">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" class="form-control transparent-bg" placeholder="example@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" class="form-control transparent-bg" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-outline-primary">LogIn</button>
+                <a href="./register.html" class="normal-link text-light float-right pt-2">New User? Register Now</a>
+            </form>
+            <hr>
+            <div id="my-signin2" class="col ml-auto mr-auto"></div>
+        </div>
+    </div>
+</section>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+
+<!--Google Sign In -->
+<script>
+    function onSuccess(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+    }
+    // function onSuccess(googleUser) {
+    //     console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    // }
+    function onFailure(error) {
+        console.log(error);
+    }
+    function renderButton() {
+        gapi.signin2.render('my-signin2', {
+            'scope': 'profile email',
+            'width': 240,
+            'height': 50,
+            'longtitle': true,
+            'theme': 'dark',
+            'onsuccess': onSuccess,
+            'onfailure': onFailure
+        });
+    }
+</script>
+
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+</body>
+</html>
